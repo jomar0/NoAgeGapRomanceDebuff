@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <RootNamespace>NoAgeGapRomanceDebuff</RootNamespace>
+        <AssemblyName>NoAgeGapRomanceDebuff</AssemblyName>
+        <TargetFramework>net472</TargetFramework>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <OutputPath>..\..\1.6\Assemblies</OutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    </PropertyGroup>
+
+    <!-- Built against 1.6; the same DLL loads on 1.7 (see LoadFolders.xml). -->
+    <ItemGroup>
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" />
+        <PackageReference Include="Lib.Harmony" Version="2.4.3" ExcludeAssets="runtime" />
+    </ItemGroup>
+</Project>
